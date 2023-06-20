@@ -28,6 +28,9 @@ namespace beefbrain_shield_pro
             trayIcon.ContextMenuStrip = new ContextMenuStrip();
             trayIcon.ContextMenuStrip.Items.Add("Open", null, this.RestoreFromTray);
             trayIcon.ContextMenuStrip.Items.Add("Exit", null, this.Shutdown);
+
+            trayIcon.BalloonTipText = "Beef Brain Shield Pro is protecting your brain...";
+            trayIcon.ShowBalloonTip(500);
         }
 
         private void ResetBackground()

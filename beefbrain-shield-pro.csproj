@@ -9,6 +9,7 @@
     <PublishSingleFile>true</PublishSingleFile>
 	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 	<ApplicationIcon>Assets\bbsp2.ico</ApplicationIcon>
+	<AssemblyName>Beef Brain Shield Pro</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
