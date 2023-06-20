@@ -1,0 +1,24 @@
+﻿<Window x:Class="beefbrain_shield_pro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:beefbrain_shield_pro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="468" Width="474"
+        WindowStyle="None"
+        Icon="/Assets/bbsp2.ico"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Visibility="Hidden">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="background" ImageSource="/Assets/window_lg.png"/>
+        </Grid.Background>
+        <Button Content="Button" Name="okay_btn" PreviewMouseDown="okay_btn_MouseDown" PreviewMouseUp="okay_btn_MouseUp" 
+                HorizontalAlignment="Center" Width="116" Opacity="0" Margin="0,316,0,44" VerticalAlignment="Bottom" Height="64"/>
+        <Button Content="Button" Name="close_btn" PreviewMouseDown="close_btn_MouseDown" PreviewMouseUp="close_btn_MouseUp" HorizontalAlignment="Right"
+                Width="66" Height="60" VerticalAlignment="Top" Opacity="0"/>
+        <StatusBar Name="titlebar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="408" Opacity="0"  PreviewMouseDown="titlebar_MouseDown"/>
+    </Grid>
+</Window>
