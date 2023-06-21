@@ -58,8 +58,7 @@ namespace beefbrain_shield_pro
 
         private void RestoreFromTray(object? sender, EventArgs e)
         {
-            this.Show();
-            this.Activate();
+            this.RestoreFromTray();
         }
 
         private void RestoreFromTray()
@@ -80,29 +79,29 @@ namespace beefbrain_shield_pro
 
         private void okay_btn_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            ChangeBackgroundOkay();
+            this.ChangeBackgroundOkay();
         }
 
         private void okay_btn_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ResetBackground();
+            this.ResetBackground();
             this.Hide();
         }
 
         private void close_btn_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            ChangeBackgroundX();
+            this.ChangeBackgroundX();
         }
 
         private void close_btn_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ResetBackground();
+            this.ResetBackground();
             this.Shutdown();
         }
 
         private void titlebar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            DragMove();
+            this.DragMove();
         }
     }
 }
